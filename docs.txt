@@ -1,0 +1,55 @@
+React Portfolio Website Plan (3 Pages)
+Yeh ak detailed structure or layout plan hai aapke 3-page React portfolio website ke liye. Is plan ko follow kar ke aap apna project asani se step-by-step ready kar sakte hain.
+1. Page Structure & Navigation
+Website me total 3 major pages honge. Unko navigate karne ke liye aap React Router ka use kar sakte hain:
+Home Page: Aapka main introduction, skills overview, or featured work.
+Projects Page: Jahan aapke saare projects cards ke roop me dikhenge.
+Contact Page: Ak contact form or social links jahan se log aapse connect kar sakein.
+2. Detailed Page Breakdown & Card Placement
+Page 1: Home Page
+Home page ka maqsad visitor ko text or visuals ke zariye impress karna hai.
+Section Name
+Content & Description
+Card Placement / Component
+Hero Section
+Aapka naam (Asif), profession (Software Developer / Front-end Developer), or ak catchy tagline. Saath me ak "View Work" ka CTA button.
+No cards. Clean typography or background animation/illustration.
+About Me Overview
+Ak chota sa intro jo aapke tech stack (React, Next.js, Redux) ke baare me bataye.
+Aap ak single profile card laga sakte hain jisme aapki image or short bio ho.
+Skills Section
+Jo bhi technologies aapko aati hain unka display.
+Mini-Cards: Har skill (React, Next.js, Git, Vite) ke liye chote chote square cards banayein jisme tech ka icon (React Icons) or naam ho.
+Featured Projects
+Aapke top 2 ya 3 best projects ka preview.
+Project Cards: Horizontal ya vertical cards jisme project ki image, title, short description, tags (e.g., #React, #Vite), or GitHub/Live link ho.
+
+Page 2: Projects Page
+Is page par aapke saare projects ak sath grid layout me show honge.
+Filter Section (Optional): Top par buttons laga sakte hain projects ko filter karne ke liye (e.g., "All", "React", "Next.js", "E-commerce").
+Projects Grid: Is section me aap Cards ka sabse zyada use karenge.
+Card Structure: Har card me upar project ka screenshot (image), darmiyan me Project Title (jaise Perfume E-commerce Website, Whisperboom), niche short feature list, or bottom me buttons ("Live Demo" / "GitHub Code").
+Layout: Responsive grid use karein (Desktop par 3 cards per row, Tablet par 2, or Mobile par 1 card per row).
+Page 3: Contact Page
+Visitors or clients ko aapse raabta karne ka rasta dene ke liye.
+Section Name
+Content & Description
+Layout / Component
+Contact Form
+Name, Email, or Message fields ke sath ak clean form.
+Ak centralized, elegant card wrapper ke andar form ko embed karein.
+Connect Cards
+Aapke social handles or professional profiles.
+Social Cards: GitHub, LinkedIn, or Email ke liye alag alag small interactive cards banayein jo hover karne par scale-up hon.
+
+3. React Project Setup & Best Practices
+Setup: Project ko Vite ke sath create karein kyunki yeh fast hai.
+Folder Structure:
+src/
+  ├── components/      # Reusable UI items like Navbar, Footer, Card
+  ├── pages/           # Home.jsx, Projects.jsx, Contact.jsx
+  ├── assets/          # Images and icons
+  ├── App.jsx
+  └── main.jsx
+Icons: Clean looks ke liye react-icons library ka istemal karein.
+Responsiveness: Design ko mobile-responsive zaroor rakhein (Tailwind CSS ya custom CSS media queries ka use kar ke).

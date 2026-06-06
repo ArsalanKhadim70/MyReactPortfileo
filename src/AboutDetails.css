@@ -1,0 +1,184 @@
+.about-details-section {
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+    min-height: 100vh;
+}
+
+.about-details-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-details-title {
+    font-size: 2.5rem;
+    color: #dbb434;
+    text-align: center;
+    margin-bottom: 40px;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.about-details-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, #dbb434, #ffd700);
+    border-radius: 2px;
+}
+
+.about-details-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.about-card {
+    background: linear-gradient(145deg, #222, #111);
+    border-radius: 15px;
+    padding: 30px;
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid transparent;
+    animation: fadeInUp 0.8s ease forwards;
+    opacity: 0;
+    transform: translateY(30px);
+    cursor: pointer;
+}
+
+.about-card:nth-child(1) { animation-delay: 0.1s; }
+.about-card:nth-child(2) { animation-delay: 0.2s; }
+.about-card:nth-child(3) { animation-delay: 0.3s; }
+
+.about-card:hover {
+    transform: translateY(-10px);
+    border: 2px solid #dbb434;
+    box-shadow: 0 15px 35px rgba(219, 180, 52, 0.3);
+}
+
+.about-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, #dbb434, #ffd700, #dbb434);
+}
+
+.about-card h2 {
+    color: #ffd700;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.about-card h3 {
+    color: #dbb434;
+    font-size: 1.1rem;
+    margin: 20px 0 10px;
+    font-weight: 500;
+}
+
+.info-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+    border-bottom: 1px solid #444;
+}
+
+.info-item:last-child {
+    border-bottom: none;
+}
+
+.info-label {
+    color: #dbb434;
+    font-weight: 600;
+    width: 40%;
+}
+
+.info-value {
+    color: #ccc;
+    width: 60%;
+    text-align: right;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.skill-badge {
+    background: linear-gradient(135deg, #504b2c, #dbb434);
+    color: #fff;
+    padding: 8px 18px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.skill-badge:hover {
+    transform: scale(1.05);
+    background: linear-gradient(135deg, #dbb434, #ffd700);
+    color: #1a1a1a;
+}
+
+.experience-text {
+    color: #ccc;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .about-details-title {
+        font-size: 2rem;
+    }
+    
+    .about-details-grid {
+        grid-template-columns: 1fr;
+        padding: 0 10px;
+    }
+    
+    .about-card {
+        padding: 20px;
+    }
+    
+    .info-item {
+        flex-direction: column;
+        gap: 5px;
+    }
+    
+    .info-label {
+        width: 100%;
+    }
+    
+    .info-value {
+        width: 100%;
+        text-align: left;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-details-title {
+        font-size: 1.6rem;
+    }
+    
+    .about-card {
+        padding: 15px;
+    }
+}
