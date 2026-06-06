@@ -280,6 +280,31 @@
     line-height: 1.5;
 }
 
+.skill-links {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.skill-link {
+    flex: 1;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: 2px solid #dbb434;
+    color: #dbb434;
+    font-size: 0.95rem;
+}
+
+.skill-link:hover {
+    background: linear-gradient(135deg, #dbb434, #ffd700);
+    color: #1a1a1a;
+    transform: scale(1.05);
+}
+
 .view-more-btn-link {
     display: inline-block;
     text-decoration: none;
@@ -373,13 +398,19 @@
     transition: all 0.4s ease;
     position: relative;
     overflow: hidden;
+    animation: pulseGlow 2s infinite;
 }
 
 .social-circle:hover {
-    transform: translateY(-5px) scale(1.1);
-    box-shadow: 0 8px 25px rgba(219, 180, 52, 0.5);
+    transform: translateY(-5px) scale(1.15) rotate(5deg);
+    box-shadow: 0 12px 30px rgba(219, 180, 52, 0.6);
     background: linear-gradient(135deg, #dbb434, #ffd700);
     color: #1a1a1a;
+}
+
+@keyframes pulseGlow {
+    0%, 100% { box-shadow: 0 0 8px rgba(219, 180, 52, 0.4); }
+    50% { box-shadow: 0 0 25px rgba(219, 180, 52, 0.7); }
 }
 
 .social-circle::before {

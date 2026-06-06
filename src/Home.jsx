@@ -8,7 +8,7 @@ const Home = () => {
         <div className='Home'>
             <div className="Main_Hero_Section">
                 <div className="hero-image">
-                    <img src="public/IMG_0002.JPG" alt="Hero" />
+                    <img src={`${import.meta.env.BASE_URL}IMG_0002.JPG`} alt="Hero" />
                 </div>
                 <div className="Hero_Section">
                     <div className="hero-card">
@@ -36,20 +36,21 @@ const Home = () => {
                 <h2>My Skills & Projects</h2>
                 <div className="skills-grid">
                     {[
-                        { id: 1, title: "WhisperBloom", desc: "An elegant multi-page e-commerce website for premium perfumes built with React.", liveLink: "https://whisper-bloom.netlify.app/" },
-                        { id: 2, title: "Api Project", desc: "A responsive three-page personal portfolio with smooth animations.", liveLink: "https://coruscating-sorbet-9bc202.netlify.app/" },
-                        { id: 3, title: "Hacking side", desc: "Converted a 5-page static HTML/CSS project into a fully responsive React app.", liveLink: "https://enchanting-starlight-5831f5.netlify.app/" },
-                        { id: 4, title: "webside.com", desc: "Built a local Express server to handle custom API responses and static image serving.", liveLink: "https://bright-marigold-6f4437.netlify.app/" },
-                        { id: 5, title: "Nexcent", desc: "Admin dashboard for managing products and orders with Material UI.", liveLink: "https://iridescent-buttercream-8b2cb8.netlify.app/" },
-                        { id: 6, title: "Quiz App", desc: "Content management system with markdown support and SEO optimization.", liveLink: "https://classy-choux-8adacd.netlify.app/" }
+                        { id: 1, title: "WhisperBloom", desc: "An elegant multi-page e-commerce website for premium perfumes built with React.", liveLink: "https://whisper-bloom.netlify.app/", githubLink: "https://github.com/ArsalanKhadim70/whisperbloom" },
+                        { id: 2, title: "Api Project", desc: "A responsive three-page personal portfolio with smooth animations.", liveLink: "https://coruscating-sorbet-9bc202.netlify.app/", githubLink: "https://github.com/ArsalanKhadim70" },
+                        { id: 3, title: "Hacking Side", desc: "Converted a 5-page static HTML/CSS project into a fully responsive React app.", liveLink: "https://enchanting-starlight-5831f5.netlify.app/", githubLink: "https://github.com/ArsalanKhadim70" },
+                        { id: 4, title: "Express Server", desc: "Built a local Express server to handle custom API responses and static image serving.", liveLink: "https://bright-marigold-6f4437.netlify.app/", githubLink: "https://github.com/ArsalanKhadim70" },
+                        { id: 5, title: "Nexcent Dashboard", desc: "Admin dashboard for managing products and orders with Material UI.", liveLink: "https://iridescent-buttercream-8b2cb8.netlify.app/", githubLink: "https://github.com/ArsalanKhadim70" },
+                        { id: 6, title: "Quiz App", desc: "Interactive quiz application with timer and score tracking.", liveLink: "https://classy-choux-8adacd.netlify.app/", githubLink: "https://github.com/ArsalanKhadim70" }
                     ].map((project) => (
                         <div key={project.id} className="skill-card">
                             <div className="skill-icon">★</div>
                             <h3>{project.title}</h3>
                             <p>{project.desc}</p>
-                            <a href={project.liveLink} target="_blank" rel="noopener noreferrer" className="view-more-btn-link">
-                                <Button variant="outlined" className="view-more-btn">View More</Button>
-                            </a>
+                            <div className="skill-links">
+                                <a href={project.liveLink} target="_blank" rel="noopener noreferrer" className="skill-link">Live Demo</a>
+                                <a href={project.githubLink} target="_blank" rel="noopener noreferrer" className="skill-link">GitHub</a>
+                            </div>
                         </div>
                     ))}
                 </div>
