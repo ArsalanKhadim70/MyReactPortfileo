@@ -1,7 +1,29 @@
-import { useState } from 'react'
+import { useRef, useState } from 'react'
+// import emailjs from '@emailjs/browser';
 import './contact.css'
 
+
 const Contact = () => {
+    // const Ref = useRef()
+    // const form = useRef();
+
+    // const sendEmail = (e) => {
+    //     e.preventDefault();
+
+    //     emailjs
+    //         .sendForm('service_ltbbt9o', 'template_k7utj9q', form.current, {
+    //             publicKey: 'YOUR_PUBLIC_KEY',
+    //         })
+    //         .then(
+    //             () => {
+    //                 console.log('SUCCESS!');
+    //             },
+    //             (error) => {
+    //                 console.log('FAILED...', error.text);
+    //             },
+    //         );
+    // };
+
     const [formData, setFormData] = useState({
         name: '',
         email: '',
@@ -32,7 +54,7 @@ const Contact = () => {
             })
         }, 1500)
     }
-  
+
 
     return (
         <div className="contact-container">

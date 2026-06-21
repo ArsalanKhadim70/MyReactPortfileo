@@ -5,7 +5,7 @@ const AboutDetails = () => {
         name: "Arsalan Khadim Hussain",
         fatherName: "Khadim Hussain",
         email: "arsalankhadim70@gmail.com",
-        phone: "+92 300 1234567",
+        phone: "+92 3232364919",
         address: "Karachi, Pakistan",
         education: "2nd years in Computer Science",
         collage: "Government National College, Karachi",

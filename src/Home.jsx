@@ -14,7 +14,7 @@ const Home = () => {
                     <div className="hero-card">
                         <h1>Welcome to My Portfolio</h1>
                         <h2>My Name is Arsalan</h2>
-                        <p>I am a passionate developer creating amazing web experiences.</p>
+                        <p>I am a Professiona Web Developer creating amazing web experiences.</p>
                         <p>My projects showcase my skills and creativity.</p>
                         <Button variant="outlined" onClick={() => navigate('/About')}>
                             Explore My Work
@@ -28,8 +28,8 @@ const Home = () => {
                 <p>I am a dedicated developer with a passion for creating innovative web applications. With a strong background in front-end and back-end development, I strive to build seamless user experiences. My portfolio showcases a variety of projects that highlight my skills and creativity in the field of web development.</p>
                 <br />
                 <Button variant="outlined" onClick={() => navigate('/about-details')}>
-                            Learn More About Me
-                        </Button>
+                    Learn More About Me
+                </Button>
             </div>
 
             <div className="Skills_Section">
@@ -40,8 +40,8 @@ const Home = () => {
                         { id: 2, title: "Api Project", desc: "A responsive three-page personal portfolio with smooth animations.", liveLink: "https://coruscating-sorbet-9bc202.netlify.app/", githubLink: "https://github.com/ArsalanKhadim70" },
                         { id: 3, title: "Hacking Side", desc: "Converted a 5-page static HTML/CSS project into a fully responsive React app.", liveLink: "https://enchanting-starlight-5831f5.netlify.app/", githubLink: "https://github.com/ArsalanKhadim70" },
                         { id: 4, title: "Express Server", desc: "Built a local Express server to handle custom API responses and static image serving.", liveLink: "https://bright-marigold-6f4437.netlify.app/", githubLink: "https://github.com/ArsalanKhadim70" },
-                        { id: 5, title: "Nexcent Dashboard", desc: "Admin dashboard for managing products and orders with Material UI.", liveLink: "https://iridescent-buttercream-8b2cb8.netlify.app/", githubLink: "https://github.com/ArsalanKhadim70" },
-                        { id: 6, title: "Quiz App", desc: "Interactive quiz application with timer and score tracking.", liveLink: "https://classy-choux-8adacd.netlify.app/", githubLink: "https://github.com/ArsalanKhadim70" }
+                        { id: 5, title: "CALCULATOR", desc: "Admin dashboard for managing products and orders with Material UI.", liveLink: "https://splendorous-lollipop-c3a6ce.netlify.app/", githubLink: "https://github.com/ArsalanKhadim70" },
+                        { id: 6, title: "Quiz App", desc: "Interactive quiz application with timer and score tracking.", liveLink: "https://splendid-choux-ce1eaf.netlify.app/", githubLink: "https://github.com/ArsalanKhadim70" }
                     ].map((project) => (
                         <div key={project.id} className="skill-card">
                             <div className="skill-icon">★</div>
